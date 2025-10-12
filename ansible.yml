@@ -127,9 +127,8 @@
 
         - name: open yml / yaml in nvim
           tags: ranger
-          blockinfile:
+          ansible.builtin.lineinfile:
             path: "~/.config/zellij/config.kdl"
-            block: |
-              theme "catppuccin-latte"
+            line: theme "catppuccin-latte"
             create: true
 
