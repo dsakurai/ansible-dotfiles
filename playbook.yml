@@ -20,5 +20,7 @@
             name: generic
         - include_role:
             name: zellij # Slow
-            tags: never # Avoid stalls in DevContainer set up.
+            apply:
+              tags: never # Avoid stalls in DevContainer set up.
+          tags: never 
 
